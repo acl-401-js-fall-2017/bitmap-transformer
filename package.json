@@ -1,0 +1,30 @@
+{
+  "name": "bitmap-transformer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "dependencies": {
+    "eslint": "^4.8.0"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaNish808/bitmap-transformer.git"
+  },
+  "keywords": [],
+  "author": "David Nishikawa <triptype@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaNish808/bitmap-transformer/issues"
+  },
+  "homepage": "https://github.com/DaNish808/bitmap-transformer#readme"
+}
