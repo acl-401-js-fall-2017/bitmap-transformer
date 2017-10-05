@@ -11,7 +11,6 @@ describe('bitmap header', () => {
         // TODO/DONE: read './test/test-bitmap.bmp' into buffer variable
         // Go ahead and use the "sync" version of the fs methods
         buffer = fs.readFileSync('./test/test-bitmap.bmp');
-        //console.log('bmp file: =================================================', buffer);
 
     });
 
@@ -22,7 +21,7 @@ describe('bitmap header', () => {
         assert.ok(constants.FILE_SIZE_OFFSET);
     });
 
-    it.only('parses header data', () => {
+    it('parses header data', () => {
         // TODO: use the constants to populate the following properties
         // on the BitmapHeader in its constructor.
         // These test values are correct for the supplied test-bitmap.bmp
