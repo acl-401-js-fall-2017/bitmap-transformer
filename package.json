@@ -1,0 +1,30 @@
+{
+  "name": "bitmap-transformer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "lint",
+    "pretest": "eslint .",
+    "test": "mocha",
+    "start": "npm run test -- -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zac-L/bitmap-transformer.git"
+  },
+  "author": "Zachary Lichens <zacharylichens@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zac-L/bitmap-transformer/issues"
+  },
+  "homepage": "https://github.com/Zac-L/bitmap-transformer#readme",
+  "devDependencies": {
+    "eslint": "^4.8.0",
+    "mocha": "^4.0.0"
+  }
+}
