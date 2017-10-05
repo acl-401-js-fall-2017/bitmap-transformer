@@ -1,4 +1,4 @@
-#In Memory Store
+#Bitmap Transformer
 #Lab week 1
 
 ===============

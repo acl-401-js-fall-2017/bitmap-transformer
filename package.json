@@ -7,7 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "test": "mocha",
+    "start": "npm run test -- -w"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/ABodey/bitmap-transformer/issues"
   },
-  "homepage": "https://github.com/ABodey/bitmap-transformer#readme"
+  "homepage": "https://github.com/ABodey/bitmap-transformer#readme",
+  "devDependencies": {
+    "eslint": "^4.8.0",
+    "mocha": "^4.0.0"
+  }
 }
