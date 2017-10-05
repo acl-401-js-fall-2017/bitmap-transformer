@@ -9,7 +9,8 @@ describe('bitmap file transformer', () => {
     beforeEach(() => {
         // TODO: read './test/test-bitmap.bmp' into buffer variable
         // Okay to use `sync` file methods for now
-
+        buffer = fs.readFileSync('./test/test-bitmap.bmp');
+        assert(buffer);
         // TODO: If the functionality in this before test is same as 
         // other test, can you remove (extract) the duplication?
     });
@@ -29,8 +30,8 @@ describe('bitmap file transformer', () => {
 
         // read the output file we saved earlier as
         // the "standard" expected output file
-        const buffer = fs.readFileSync('./test/inverted-expected.bmp');
-        assert.deepEqual(bitmap.buffer, buffer);
+        const expectedBuffer = fs.readFileSync('./test/inverted-expected.bmp');
+        assert.deepEqual(bitmap.buffer, expectedBuffer);
 
         // if you don't have a standard file yet, you could write it 
         // out by commenting above code, using code below and visually inspect
