@@ -3,7 +3,7 @@ const constants = require('../lib/bitmap-constants');
 const BitmapHeader = require('../lib/bitmap-header');
 const fs = require('fs');
 
-describe('bitmap header', () => {
+describe.only('bitmap header', () => {
 
     let buffer = null;
     beforeEach(() => {

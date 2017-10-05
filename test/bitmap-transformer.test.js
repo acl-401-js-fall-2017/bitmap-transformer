@@ -1,7 +1,7 @@
 const assert = require('assert');
 const fs = require('fs');
 const BitmapTransformer = require('../lib/bitmap-transformer');
-const invert = require('../lib/invert-transform');
+// const invert = require('../lib/invert-transform');
 
 describe('bitmap file transformer', () => {
     // eslint-disable-next-line
@@ -22,6 +22,7 @@ describe('bitmap file transformer', () => {
 
         // call .transform(), which will modify the buffer.
         // in this api, you pass in a transformation function
+        // eslint-disable-next-line
         bitmap.transform(invert);
 
         // after above step, the buffer has been modified
