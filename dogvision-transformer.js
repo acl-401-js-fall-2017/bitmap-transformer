@@ -1,4 +1,6 @@
 module.exports = function(pix) {
-    pix.r = 0;
+    if(pix.r > pix.g) {
+        pix.r = pix.g;
+    }
     return pix;
 };
