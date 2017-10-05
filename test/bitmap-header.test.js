@@ -15,7 +15,7 @@ describe('bitmap header', () => {
 
     });
 
-    it('has correct specs', () => {
+    it.only('has correct specs', () => {
         // TODO: read the docs to figure out what these values should be
         assert.ok(constants.PIXEL_OFFSET);
         assert.ok(constants.BITS_PER_PIXEL_OFFSET);
@@ -31,4 +31,6 @@ describe('bitmap header', () => {
         assert.equal(header.bitsPerPixel, 24);
         assert.equal(header.fileSize, 30054);
     });
+
+   
 });
