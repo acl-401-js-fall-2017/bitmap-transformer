@@ -3,7 +3,7 @@ const fs = require('fs');
 const BitmapTransformer = require('../lib/bitmap-transformer');
 const invert = require('../lib/invert-transformer');
 
-describe.skip('bitmap file transformer', () => {
+describe('bitmap file transformer', () => {
     
     let buffer = null;
     beforeEach(() => {

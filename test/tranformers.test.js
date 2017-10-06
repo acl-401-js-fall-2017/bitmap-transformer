@@ -4,7 +4,7 @@ const grayscale = require('../lib/grayscale-transformer');
 const redscale = require('../lib/redscale-transformer');
 
 describe('transformers', () => {    
-
+    
     it('invert', () => {
         // HINT: invert subtracts each value from 255
         const transformed = invert({
@@ -37,14 +37,14 @@ describe('transformers', () => {
     });
 
     // TODO: add a third transformer
-    it.skip('redscale', () => {
-        const transformed = redscale({
+    it('redscale', () => {
+        const transformedRed = redscale({
             r: 34,
             g: 100,
             b: 205
         });
 
-        assert.deepEqual(transformed, {
+        assert.deepEqual(transformedRed, {
             r: 226,
             g: 56.5,
             b: 56.5
