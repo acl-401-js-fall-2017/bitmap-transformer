@@ -12,6 +12,7 @@ describe('bitmap file transformer', () => {
         // TODO: If the functionality in this before test is same as 
         // other test, can you remove (extract) the duplication?
         buffer = fs.readFileSync('./test/test-bitmap.bmp');
+        return buffer;
     });
 
     // "pinning" test, or "snapshot" test
