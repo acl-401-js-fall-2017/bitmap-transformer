@@ -19,7 +19,7 @@ describe('transformers', () => {
         });
     });
 
-    it.skip('grayscale', () => {
+    it.only('grayscale', () => {
         // HINT: grayscale assigns the average of all three colors
         // as the new value for each color
         const transformed = grayscale({
