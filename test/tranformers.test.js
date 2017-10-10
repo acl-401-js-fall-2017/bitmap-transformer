@@ -1,7 +1,7 @@
 const assert = require('assert');
 const invert = require('../lib/invert-transformer');
 const grayscale = require('../lib/grayscale-transformer');
-const redscale = require('../lib/redscale-transformer');
+const redShift = require('../lib/redShift-transformer');
 
 describe('transformers', () => {    
     
@@ -37,8 +37,8 @@ describe('transformers', () => {
     });
 
     // TODO: add a third transformer
-    it('redscale', () => {
-        const transformedRed = redscale({
+    it('redShift', () => {
+        const transformedRed = redShift({
             r: 34,
             g: 100,
             b: 205
