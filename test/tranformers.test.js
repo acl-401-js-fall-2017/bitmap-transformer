@@ -1,9 +1,10 @@
 const assert = require('assert');
 const invert = require('../lib/invert-transformer');
 const grayscale = require('../lib/grayscale-transformer');
+const redShift = require('../lib/redShift-transformer');
 
-describe('transformers', () => {
-
+describe('transformers', () => {    
+    
     it('invert', () => {
         // HINT: invert subtracts each value from 255
         const transformed = invert({
@@ -36,4 +37,17 @@ describe('transformers', () => {
     });
 
     // TODO: add a third transformer
+    it('redShift', () => {
+        const transformedRed = redShift({
+            r: 34,
+            g: 100,
+            b: 205
+        });
+
+        assert.deepEqual(transformedRed, {
+            r: 226,
+            g: 56.5,
+            b: 56.5
+        });
+    });
 });
