@@ -1,6 +1,8 @@
 const assert = require('assert');
 const invert = require('../lib/invert-transformer');
 const grayscale = require('../lib/grayscale-transformer');
+const luminosity = require('../lib/luminosity-transformer');
+
 
 describe('transformers', () => {
 
@@ -36,4 +38,18 @@ describe('transformers', () => {
     });
 
     // TODO: add a third transformer
+    it ('luminosity', () => {
+        //uses weighted values of average
+        const transformed = luminosity({
+            r: 42,
+            g: 109,
+            b: 149
+        });
+
+        assert.deepEqual(transformed, {
+            r: 21,
+            g: 72,
+            b: 7
+        });
+    });
 });
