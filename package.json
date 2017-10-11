@@ -1,0 +1,28 @@
+{
+  "name": "bitmap-transformer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^4.8.0",
+    "mocha": "^4.0.0"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robnit/bitmap-transformer.git"
+  },
+  "author": "Robin Miller <rmillerpdx@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robnit/bitmap-transformer/issues"
+  },
+  "homepage": "https://github.com/robnit/bitmap-transformer#readme"
+}
