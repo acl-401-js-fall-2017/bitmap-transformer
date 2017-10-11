@@ -1,7 +1,7 @@
 const assert = require('assert');
 const fs = require('fs');
 const BitmapTransformer = require('../lib/bitmap-transformer');
-const invert = require('../lib/invert-transform');
+const invert = require('../lib/invert-transformer');
 
 describe('bitmap file transformer', () => {
     
@@ -9,7 +9,8 @@ describe('bitmap file transformer', () => {
     beforeEach(() => {
         // TODO: read './test/test-bitmap.bmp' into buffer variable
         // Okay to use `sync` file methods for now
-
+        buffer = fs.readFileSync('./test/test-bitmap.bmp');
+        assert(buffer);
         // TODO: If the functionality in this before test is same as 
         // other test, can you remove (extract) the duplication?
     });
@@ -29,6 +30,7 @@ describe('bitmap file transformer', () => {
 
         // read the output file we saved earlier as
         // the "standard" expected output file
+
         const expected = fs.readFileSync('./test/inverted-expected.bmp');
         assert.deepEqual(bitmap.buffer, expected);
 
