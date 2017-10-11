@@ -1,12 +1,13 @@
 const assert = require('assert');
 const fs = require('fs');
 const BitmapTransformer = require('../lib/bitmap-transformer');
-const invert = require('../lib/invert-transform');
+const invert = require('../lib/invert-transformer');
 
 describe('bitmap file transformer', () => {
-    
+    // eslint-disable-next-line
     let buffer = null;
     beforeEach(() => {
+        buffer = fs.readFileSync('./test/test-bitmap.bmp');
         // TODO: read './test/test-bitmap.bmp' into buffer variable
         // Okay to use `sync` file methods for now
 
@@ -22,6 +23,7 @@ describe('bitmap file transformer', () => {
 
         // call .transform(), which will modify the buffer.
         // in this api, you pass in a transformation function
+        // eslint-disable-next-line
         bitmap.transform(invert);
 
         // after above step, the buffer has been modified
