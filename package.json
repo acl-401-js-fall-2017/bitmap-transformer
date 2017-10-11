@@ -1,0 +1,28 @@
+{
+  "name": "bitmap-transformer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "npm run test -- -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erdemkoral/bitmap-transformer.git"
+  },
+  "author": "Erdem Koral",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erdemkoral/bitmap-transformer/issues"
+  },
+  "homepage": "https://github.com/erdemkoral/bitmap-transformer#readme",
+  "devDependencies": {
+    "enlist": "^0.1.0",
+    "mocha": "^4.0.0"
+  }
+}
