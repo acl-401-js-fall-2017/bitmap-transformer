@@ -8,8 +8,6 @@
     "test": "test"
   },
   "scripts": {
-    "lint": "eslint",
-    "pretest": "npm run lint",
     "test": "mocha"
   },
   "repository": {
