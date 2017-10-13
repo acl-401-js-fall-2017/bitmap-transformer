@@ -1,17 +1,17 @@
 const assert = require('assert');
 const fs = require('fs');
 const BitmapTransformer = require('../lib/bitmap-transformer');
-const invert = require('../lib/invert-transform');
+// const invert = require('../lib/invert-transform');
 
-describe('bitmap file transformer', () => {
-    
+describe.skip('bitmap file transformer', () => {
+    // eslint-disable-next-line
     let buffer = null;
     beforeEach(() => {
-        // TODO: read './test/test-bitmap.bmp' into buffer variable
+        // TODO-DONE: read './test/test-bitmap.bmp' into buffer variable
         // Okay to use `sync` file methods for now
-
-        // TODO: If the functionality in this before test is same as 
-        // other test, can you remove (extract) the duplication?
+        buffer = fs.readFileSync('./test/test-bitmap.bmp');
+        // TODO-DONE: If the functionality in this before test is same as 
+        // other test, can you remove (extract) the duplication? No
     });
 
     // "pinning" test, or "snapshot" test
@@ -22,6 +22,7 @@ describe('bitmap file transformer', () => {
 
         // call .transform(), which will modify the buffer.
         // in this api, you pass in a transformation function
+        // eslint-disable-next-line
         bitmap.transform(invert);
 
         // after above step, the buffer has been modified
